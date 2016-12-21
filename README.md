@@ -22,22 +22,23 @@ The script should download the [Tirau](https://en.wikipedia.org/wiki/Tirau) arti
 Set up a Wikipedia stratigraphy object.
 
 ```
-wikistrat = WikiStrat()
+import wikistrat
+wiki = WikiStrat()
 ```
 
 WikiStrat retrieves xml histories from Wikipedia and stores them in a data directory. Visualisations get created in an image directory. By default these are expected to be `wikixml` and `img` respectively. You can configure these directories with the `data_dir` and `img_dir` parameters.
 
 ```
-wikistrat = WikiStrat(data_dir='folder1', img_dir='folder2)
+wiki = WikiStrat(data_dir='folder1', img_dir='folder2)
 ```
 
 Extract and visualise Wikipedia article histories with the parse method.
 ```
-wikistrat.parse('Tirau')
+wiki.parse('Tirau')
 ```
 
 By default the parse method will only download an article's history if there is no local copy. To force a refresh, set `refresh=True`.
 
 ```
-wikistrat.parse('Tirau', refresh=True)
+wiki.parse('Tirau', refresh=True)
 ```
