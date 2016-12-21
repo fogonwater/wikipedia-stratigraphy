@@ -4,6 +4,12 @@ Some code for extracting and visualising [Wikipedia article histories](http://fo
 
 Written in Python 2.7.x. Untested with Python 3.x.
 
+![Example visualisation](tirau_example.png)
+
+Example visualisation for the [Tirau](https://en.wikipedia.org/wiki/Tirau) article's edit history. Each graphic represents the history of a single article. Time moves from left to right. The varying heights of the coloured section of represent how many lines an article had at each point in time. Articles typically start short and become longer over the years. The oldest unchanged lines from the article are shaded deep blue; newer sections are shaded pale yellow.
+
+The script also produces visualisations of anonymous edits and contributions by unique editors.
+
 ## Installation
 
 1. Create and activate a virtual environment (e.g. `virtualenv venv` then `source venv/bin/activate`)
