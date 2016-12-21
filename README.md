@@ -17,7 +17,7 @@ Test the script is working by running `wikistrat.py` in a directory that contain
 $ python wikistrat.py
 ```
 
-The script should download the Tirau article's history to `wikixml` and create three visualisations in the `img` directory.
+The script should download the [Tirau](https://en.wikipedia.org/wiki/Tirau) article's history to `wikixml` and create three visualisations in the `img` directory.
 
 Set up a Wikipedia stratigraphy object.
 
@@ -25,7 +25,7 @@ Set up a Wikipedia stratigraphy object.
 wikistrat = WikiStrat()
 ```
 
-WikiStrat retrieves xml histories from Wikipedia and stores them in a data directory. Images are written to an image directory. By default these are expected to be `wikixml` and `img` respectively. You can configure them.
+WikiStrat retrieves xml histories from Wikipedia and stores them in a data directory. Visualisations get created in an image directory. By default these are expected to be `wikixml` and `img` respectively. You can configure these directories with the `data_dir` and `img_dir` parameters.
 
 ```
 wikistrat = WikiStrat(data_dir='folder1', img_dir='folder2)
