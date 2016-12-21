@@ -13,20 +13,31 @@ Written in Python 2.x. Untested with Python 3.x.
 
 Test the script is working by running `wikistrat.py` in a directory that contains folders named `wikixml` and `img`.
 
-`$ python wikistrat.py`
+```
+$ python wikistrat.py
+```
 
 The script should download the Tirau article's history to `wikixml` and create three visualisations in the `img` directory.
 
 Set up a Wikipedia stratigraphy object.
 
-`wikistrat = WikiStrat()`
+```
+wikistrat = WikiStrat()
+```
 
 WikiStrat retrieves xml histories from Wikipedia and stores them in a data directory. Images are written to an image directory. By default these are expected to be `wikixml` and `img` respectively. You can configure them.
 
-`wikistrat = WikiStrat(data_dir='special_data_folder', img_dir='nice_images_folder)`
+```
+wikistrat = WikiStrat(data_dir='folder1', img_dir='folder2)
+```
 
 Extract and visualise Wikipedia article histories with the parse method.
-`wikistrat.parse('Tirau')`
+```
+wikistrat.parse('Tirau')
+```
 
 By default the parse method will only download an article's history if there is no local copy. To force a refresh, set `refresh=True`.
-`wikistrat.parse('Tirau', refresh=True)`
+
+```
+wikistrat.parse('Tirau', refresh=True)
+```
