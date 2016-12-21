@@ -2,7 +2,7 @@
 
 Some code for extracting and visualising [Wikipedia article histories](http://fogonwater.com/blog/2015/11/wikipedia-edit-history-stratigraphy/). This code is a bit of a mess and would benefit from a serious tidy. Fails on articles with a very large number of edits. I also suspect there is something funky about the way the most recent edit displays.
 
-Written in Python 2.x. Untested with Python 3.x.
+Written in Python 2.7.x. Untested with Python 3.x.
 
 ## Installation
 
